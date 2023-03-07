@@ -4,6 +4,7 @@
     --blue: hsl(248, 32%, 49%);
     --dark-blue: hsl(249, 10%, 26%);
     --grayish-blue: hsl(246, 25%, 77%);
+    --white: hsl(0, 0%, 100%);
     --font-size: 1em;
     --font-light: 400;
     --font-medium: 500;
@@ -25,11 +26,17 @@ body {
     font-size: var(--font-size);
     margin: 0;
     padding: 0;
+    background-color: var(--red);
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5 {
     font-weight: var(--font-bold);
-    line-height: calc(var(--font-size) * 1);
+    line-height: calc(var(--font-size) * 1.2);
     margin: 0;
     padding: 0;
 }
@@ -64,4 +71,28 @@ img, picture, svg, video, object {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+.header {
+    display: grid;
+    gap: 1rem;
+}
+
+.header__heading {
+    font-size: calc(var(--font-size) * 1.6);
+    font-weight: var(--font-extra-bold);
+}
+
+.header__paragraph {
+    font-size: calc(var(--font-size) * 1);
+    font-weight: var(--font-light);
+}
+
+.attribution {
+    font-size: calc(var(--font-size) * 0.6);
+    font-weight: var(--font-light);
+}
+
+.attribution > a {
+    color: var(--blue);
 }
