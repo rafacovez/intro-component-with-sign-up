@@ -1,0 +1,67 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --font-size: 1em;
+    --font-light: 400;
+    --font-medium: 500;
+    --font-bold: 600;
+    --font-extra-bold: 700;
+    --font-family: 'Poppins', sans-serif;;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: var(--font-bold);
+    line-height: calc(var(--font-size) * 1);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-weight: var(--font-regular);
+    line-height: calc(var(--font-size) * 1.6);
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+input, textarea, button, select {
+    font: inherit;
+}
+
+img, picture, svg, video, object {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
