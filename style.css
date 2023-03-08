@@ -11,6 +11,7 @@
     --font-bold: 600;
     --font-extra-bold: 700;
     --font-family: 'Poppins', sans-serif;;
+    --border-radius: 12px;
 }
 
 html {
@@ -24,7 +25,7 @@ html {
 body {
     font-family: var(--font-family);
     font-size: var(--font-size);
-    margin: 0;
+    margin: 0 1.5rem;
     padding: 0;
     background-color: var(--red);
     color: var(--white);
@@ -79,13 +80,36 @@ img, picture, svg, video, object {
 }
 
 .header__heading {
-    font-size: calc(var(--font-size) * 1.6);
+    font-size: calc(var(--font-size) * 1.8);
     font-weight: var(--font-extra-bold);
 }
 
 .header__paragraph {
     font-size: calc(var(--font-size) * 1);
     font-weight: var(--font-light);
+}
+
+.main {
+    display: grid;
+    gap: 1rem;
+}
+
+.free-trial {
+    background-color: var(--blue);
+    margin: 0;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.free-trial > p {
+    font-size: calc(var(--font-size) * 1);
+    font-weight: var(--font-light);
+    margin: 0 2rem;
+}
+
+.free-trial > p > .highlighted-text {
+    font-weight: var(--font-bold);
 }
 
 .attribution {
