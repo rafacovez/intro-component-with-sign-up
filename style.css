@@ -7,7 +7,7 @@
     --white: hsl(0, 0%, 100%);
     --font-size: 1em;
     --font-light: 400;
-    --font-medium: 500;
+    --font-regular: 500;
     --font-bold: 600;
     --font-extra-bold: 700;
     --font-family: 'Poppins', sans-serif;;
@@ -32,8 +32,12 @@ body {
     background-image: url("images/bg-intro-mobile.png");
     color: var(--white);
     display: grid;
-    gap: 5rem;
+    gap: 2rem;
     place-items: center;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
     text-align: center;
     min-height: 100vh;
 }
@@ -80,6 +84,7 @@ img, picture, svg, video, object {
 .header {
     display: grid;
     gap: 1rem;
+    grid-area: header;
 }
 
 .header__heading {
@@ -88,13 +93,15 @@ img, picture, svg, video, object {
 }
 
 .header__paragraph {
-    font-size: calc(var(--font-size) * 1);
-    font-weight: var(--font-light);
+    font-size: calc(var(--font-size) * 0.8);
+    font-weight: var(--font-regular);
+    opacity: 0.8;
 }
 
 .main {
     display: grid;
     gap: 2rem;
+    grid-area: main;
 }
 
 .free-trial {
@@ -163,6 +170,11 @@ img, picture, svg, video, object {
     color: var(--red);
 }
 
+.footer {
+    margin: 2rem 0 0 0;
+    grid-area: footer;
+}
+
 .attribution {
     font-size: calc(var(--font-size) * 0.8);
     font-weight: var(--font-light);
@@ -175,5 +187,22 @@ img, picture, svg, video, object {
 @media only screen and (min-width: 768px) {
     body {
         background-image: url("images/bg-intro-desktop.png");
+        grid-template-areas:
+        "header main"
+        "footer footer";
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .header {
+        text-align: left;
+    }
+
+    .header__heading {
+        font-size: calc(var(--font-size) * 2.5);
+    }
+
+    .form {
+        padding: 2rem;
     }
 }
