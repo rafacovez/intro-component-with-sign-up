@@ -29,6 +29,7 @@ body {
     margin: 0;
     padding: 5rem 1.5rem;
     background-color: var(--red);
+    background-image: url("images/bg-intro-mobile.png");
     color: var(--white);
     display: grid;
     gap: 5rem;
@@ -125,13 +126,15 @@ img, picture, svg, video, object {
 }
 
 .form__input {
-    color: var(--dark-blue);
+    color: var(--grayish-blue);
     font-size: calc(var(--font-size) * 0.8);
     font-weight: var(--font-bold);
     margin: 0;
     padding: 1rem;
     width: 100%;
-
+    border: 1px solid var(--grayish-blue);
+    border-radius: 4px;
+    outline: none;
 }
 
 .form__btn {
@@ -167,4 +170,10 @@ img, picture, svg, video, object {
 
 .attribution > a {
     color: var(--blue);
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url("images/bg-intro-desktop.png");
+    }
 }
