@@ -158,6 +158,10 @@ img, picture, svg, video, object {
     cursor: pointer;
 }
 
+.form__btn:hover {
+    opacity: 0.8;
+}
+
 .form__disclaimer {
     font-size: calc(var(--font-size) * 0.8);
     font-weight: var(--font-light);
