@@ -5,6 +5,7 @@
     --dark-blue: hsl(249, 10%, 26%);
     --grayish-blue: hsl(246, 25%, 77%);
     --white: hsl(0, 0%, 100%);
+    --opaque-white: hsl(0, 0%, 90%);
     --font-size: 1em;
     --font-light: 400;
     --font-regular: 500;
@@ -95,7 +96,7 @@ img, picture, svg, video, object {
 .header__paragraph {
     font-size: calc(var(--font-size) * 0.8);
     font-weight: var(--font-regular);
-    opacity: 0.8;
+    color: var(--opaque-white);
 }
 
 .main {
@@ -116,6 +117,7 @@ img, picture, svg, video, object {
     font-size: calc(var(--font-size) * 1);
     font-weight: var(--font-light);
     margin: 0 2rem;
+    color: var(--opaque-white);
 }
 
 .free-trial > p > .highlighted-text {
@@ -164,13 +166,13 @@ img, picture, svg, video, object {
 
 .form__disclaimer {
     font-size: calc(var(--font-size) * 0.8);
-    font-weight: var(--font-light);
+    font-weight: var(--font-regular);
     color: var(--grayish-blue);
 }
 
 .form__disclaimer > a {
     text-decoration: none;
-    font-weight: var(--font-bold);
+    font-weight: var(--font-extra-bold);
     color: var(--red);
 }
 
