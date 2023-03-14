@@ -26,10 +26,14 @@
   <main class="main">
     <div class="free-trial"><p><span class="highlighted-text">Try it free 7 days</span> then $20/mo. thereafter</p></div>
     <form action="submit" class="form">
-      <input class="form__input" type="text" id="firstName" name="firstName" value="First Name"/>
-      <input class="form__input" type="text" id="lastName" name="lastName" value="Last Name"/>
-      <input class="form__input" type="text" id="emailAddress" name="emailAddress" value="Email Address"/>
-      <input class="form__input" type="text" id="password" name="password" value="Password"/>
+      <label class="form__label" for="firstName">First Name</label>
+      <input required class="form__input" type="text" id="firstName" name="firstName"/>
+      <label class="form__label" for="lastName">Last Name</label>
+      <input required class="form__input" type="text" id="lastName" name="lastName"/>
+      <label class="form__label" for="emailAddress">Email Address</label>
+      <input required class="form__input" type="text" id="emailAddress" name="emailAddress"/>
+      <label class="form__label" for="password">Password</label>
+      <input required class="form__input" type="text" id="password" name="password"/>
       <input class="form__btn" type="submit" value="Claim your free trial"/>
       <p class="form__disclaimer">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
     </form>
@@ -42,4 +46,5 @@
     </p>
   </footer>
 </body>
+<script src="main.js"></script>
 </html>
