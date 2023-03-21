@@ -134,8 +134,27 @@ img, picture, svg, video, object {
     box-shadow: var(--box-shadow);
 }
 
-.form__input {
-    color: var(--grayish-blue);
+.form-input {
+    position: relative;
+}
+
+.form-input__label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: var(--dark-blue);
+    font-size: calc(var(--font-size) * 0.8);
+    font-weight: var(--font-bold);
+    opacity: 0.8;
+    cursor: text;
+}
+
+.form-input__input {
+    color: var(--dark-blue);
     font-size: calc(var(--font-size) * 0.8);
     font-weight: var(--font-bold);
     margin: 0;
@@ -210,5 +229,13 @@ img, picture, svg, video, object {
 
     .form {
         padding: 2rem;
+    }
+
+    .form-input__label {
+        left: 1.5rem;
+    }
+
+    .form-input__input {
+        padding: 1rem 1.5rem;
     }
 }
